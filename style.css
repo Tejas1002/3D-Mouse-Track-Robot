@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.main h1 {
+    color: white;
+}
+
+iframe {
+    width: 100%;
+    min-height: calc(100%);
+}
+
+.nav {
+    width: 100%;
+    height: 10%;
+    /* background-color: black; */
+    color: #fff;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    padding: 10px 40px 10px 40px;
+}
+
+.nav .left {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+
+}
+
+.nav .right {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right a {
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+}
+
+.right button {
+    padding: 10px 20px 10px 20px;
+    background: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+
+
+}
+
+.bck-fnt {
+    position: absolute;
+    /* add this */
+    top: 5%;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    /* add this to send the h1 tag behind the iframe */
+    text-align: center;
+}
+
+.bck-fnt h1 {
+    text-transform: uppercase;
+    /* font-family: Bold Summer Free; */
+    font-weight: 900;
+    font-size: 290px;
+    color: #C2C2C2;
+    /* change the color to your preference */
+}
+
+.iframe-container {
+    position: relative;
+    /* add this */
+    z-index: 1;
+    /* #C2C2C2add this to bring the iframe to the front */
+}
+
+.fnt-fnt {
+    position: absolute;
+    /* add this */
+    top: 42.5%;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    /* add this to send the h1 tag behind the iframe */
+    text-align: left;
+    justify-content: center;
+    display: flex;
+    /* background-color: transparent;
+    backdrop-filter: blur(5px); */
+}
+
+.fnt-fnt h1 {
+    font-family: molika;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 170px;
+    color: #C2C2C2;
+    /* change the color to your preference */
+}
+
+.foot {
+    width: 100%;
+    height: 10%;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    top: 90%;
+    justify-content: space-between;
+    padding: 10px 40px 10px 40px;
+}
+
+.foot .left {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 40px 10px 40px;
+    /* background-color: #c2c2c200;
+    backdrop-filter: blur(50px); */
+
+}
+
+.foot .left i {
+    font-size: 20px;
+    color: #000000;
+    margin-right: 10px;
+
+}
+
+.foot .center {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #c2c2c200;
+    backdrop-filter: blur(50px); */
+
+}
+
+.foot .center h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.foot .right {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px 10px 40px;
+    /* background-color: #c2c2c200;
+    backdrop-filter: blur(50px); */
+
+}
+
+.foot .right i {
+    font-size: 30px;
+    color: #000000;
+    margin-right: 10px;
+
+}
